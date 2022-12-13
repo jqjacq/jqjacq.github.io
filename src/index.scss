@@ -7,14 +7,17 @@
 .centerText {
     text-align: center;
 }
+.rightAlign {
+    text-align: right;
+}
 .nav-container {
-    display: flex;
     .links {
         text-decoration: none;
         margin-right: 10px;
         color: black;
         &:hover {
             font-weight: bold;
+            font-style: italic;
         }
     }
 }
@@ -39,19 +42,23 @@
     .languagelist {
         padding: 10px 50px;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
     }
 }
 
 .contact-container {
-    .contacts {
-        color: black;
-        margin-right: 30px;
+
+    textarea {
+        resize: none;
     }
 }
 
 .footer-container {
-    text-align: right;
+    color: black;
+        .socialmedia {
+            color: black;
+            margin-right: 30px;
+        }
 }
 

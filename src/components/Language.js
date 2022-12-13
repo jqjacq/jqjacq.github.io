@@ -3,7 +3,7 @@ import React from 'react'
 export default function Language() {
   return (
     <div className="language-container">
-        <header className="centerText">Language</header>
+        <header className="centerText">Skills</header>
         <div className="languagelist">
             <span><i className="fa-brands fa-js"></i>JavaScript</span>
             <span><i className="fa-brands fa-html5"></i>HTML</span>

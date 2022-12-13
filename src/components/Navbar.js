@@ -3,7 +3,7 @@ import { Link } from "react-router-dom"
 
 export default function Navbar() {
   return (
-    <nav className="nav-container">
+    <nav className="nav-container rightAlign">
             <Link to="/" className="links"> About Me </Link> 
             <Link to="/projects" className="links"> My Projects </Link>
             <Link to="/contact" className="links"> Contact Me</Link>

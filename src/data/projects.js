@@ -1,9 +1,9 @@
 const projects = [{
         id: 1,
-        name: "",
-        projecttype: "",
-        language: "",
-        description: "" 
+        name: "JQ's Coffee and Tea",
+        projecttype: "Ecommerce",
+        language: "React",
+        description: "This is a ecommerce website that consists of Bootstrap," 
     }, {
         id: 2,
         name: "",
