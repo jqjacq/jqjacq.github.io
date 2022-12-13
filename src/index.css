@@ -16,15 +16,14 @@
   display: flex;
 }
 
-.nav-container ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.nav-container .links {
+  text-decoration: none;
+  margin-right: 10px;
+  color: black;
 }
 
-.nav-container li {
-  margin-right: 10px;
-  list-style-type: none;
+.nav-container .links:hover {
+  font-weight: bold;
 }
 
 .about-container {
@@ -65,5 +64,9 @@
 .contact-container .contacts {
   color: black;
   margin-right: 30px;
+}
+
+.footer-container {
+  text-align: right;
 }
 /*# sourceMappingURL=index.css.map */

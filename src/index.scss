@@ -9,12 +9,13 @@
 }
 .nav-container {
     display: flex;
-    ul {
-       display: flex;
-    }
-    li {
+    .links {
+        text-decoration: none;
         margin-right: 10px;
-        list-style-type: none;
+        color: black;
+        &:hover {
+            font-weight: bold;
+        }
     }
 }
 
@@ -51,6 +52,6 @@
 }
 
 .footer-container {
-
+    text-align: right;
 }
 

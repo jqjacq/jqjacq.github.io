@@ -5,16 +5,25 @@ import Projects from './components/Projects'
 import Language from './components/Language'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
 
 export default function App() {
   return (
-    <>
+    <Router>
         <Navbar />
-        <About />
-        <Projects />
-        <Language />
-        <Contact />
+          <Switch>
+              <Route exact path="/">
+                  <About />
+                  <Language />
+              </Route>
+              <Route path="/projects">
+                  <Projects />
+              </Route>
+              <Route path="/contact">
+                  <Contact />
+              </Route>
+          </Switch>
         <Footer />
-    </>
+    </Router>
   )
 }
