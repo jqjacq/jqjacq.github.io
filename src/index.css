@@ -1,9 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@300&family=Ubuntu:wght@300&display=swap");
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Lato", sans-serif;
+  background-color: rgb(255, 239, 255);
 }
 
 .centerText {
@@ -14,50 +15,57 @@
   text-align: right;
 }
 
+.nav-container {
+  padding: 0.25rem 0.5rem;
+}
 .nav-container .links {
   text-decoration: none;
   margin-right: 10px;
   color: black;
 }
-
 .nav-container .links:hover {
-  font-weight: bold;
   font-style: italic;
+}
+.nav-container .links:active {
+  font-weight: bold;
 }
 
 .about-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .about-container .intro {
-  padding: 100px 5px;
+  width: 50%;
+  padding: 9rem 1rem;
 }
-
+.about-container .intro1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+.about-container .intro2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+.about-container .intro3 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
 .about-container .flower {
-  width: 100%;
+  width: 50%;
 }
 
 .project-container {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .language-container {
   display: block;
 }
-
 .language-container .languagelist {
   padding: 10px 50px;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  -ms-grid-rows: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
 }
 
 .contact-container textarea {
@@ -67,9 +75,7 @@
 .footer-container {
   color: black;
 }
-
 .footer-container .socialmedia {
   color: black;
   margin-right: 30px;
-}
-/*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=index.css.map */
