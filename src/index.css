@@ -4,7 +4,8 @@
   margin: 0;
   padding: 0;
   font-family: "Lato", sans-serif;
-  background-color: rgb(255, 239, 255);
+  background-color: rgb(37, 36, 36);
+  color: white;
 }
 
 .centerText {
@@ -20,8 +21,7 @@
 }
 .nav-container .links {
   text-decoration: none;
-  margin-right: 10px;
-  color: black;
+  margin-right: 2rem;
 }
 .nav-container .links:hover {
   font-style: italic;
@@ -53,19 +53,36 @@
   width: 50%;
 }
 
+.gridbox {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0 2rem;
+}
+.gridbox header {
+  font-weight: bold;
+  padding-bottom: 1rem;
+}
+.gridbox .skills-container, .gridbox .framework-container {
+  border: 3px solid gray;
+  border-radius: 10px;
+  margin: 0.5rem;
+  padding: 1rem;
+}
+.gridbox .skills {
+  color: white;
+}
+.gridbox progress {
+  display: inline-flex;
+  align-items: middle;
+  margin-left: 1rem;
+  background-color: rgb(220, 241, 234);
+  border-radius: 5px;
+  color: lightskyblue;
+}
+
 .project-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-}
-
-.language-container {
-  display: block;
-}
-.language-container .languagelist {
-  padding: 10px 50px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
 }
 
 .contact-container textarea {
