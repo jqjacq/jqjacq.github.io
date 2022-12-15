@@ -3,7 +3,7 @@ import React from 'react'
 export default function Footer() {
   return (
     <>
-    <div className="footer-container centerText">
+    <div className="footer-container centerText rightMargin">
       <a href="https://www.github.com/jqjacq" alt="Github">
         <i className="fa-brands fa-2x fa-github socialmedia"></i>
       </a>

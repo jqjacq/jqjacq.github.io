@@ -5,7 +5,7 @@ export default function Contact() {
     <>
     <div class="contact-container">  
       <form class="w3-animate-right">
-          <header class="centerText"> Contact Me </header>
+          <header class="centerText bold"> Contact Me </header>
             <label for="first-name">Full Name:</label>
                 <input type="text" 
                     id="full-name"
@@ -31,6 +31,6 @@ export default function Contact() {
           </form>
         </div>
           <p class="centerText end"> You can also contact me through GitHub and email! </p>
-      </>
+    </>
   )
 }
