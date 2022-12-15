@@ -38,7 +38,7 @@
   padding: 9rem 1rem;
 }
 .about-container .intro1 {
-  font-size: 3rem;
+  font-size: 4rem;
   margin-bottom: 0.5rem;
 }
 .about-container .intro2 {
@@ -56,9 +56,10 @@
 .gridbox {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  padding: 0 2rem;
+  padding: 0 5rem;
 }
 .gridbox header {
+  font-size: 1.25rem;
   font-weight: bold;
   padding-bottom: 1rem;
 }
@@ -66,18 +67,28 @@
   border: 3px solid gray;
   border-radius: 10px;
   margin: 0.5rem;
-  padding: 1rem;
+  padding: 1rem 2rem;
 }
 .gridbox .skills {
+  font-size: 0.75rem;
+  margin-top: -1rem;
+  margin-left: -0.6rem;
+  z-index: 1;
+  position: absolute;
   color: white;
 }
+.gridbox .skillicon {
+  padding: 2px;
+}
 .gridbox progress {
+  position: absolute;
   display: inline-flex;
   align-items: middle;
   margin-left: 1rem;
   background-color: rgb(220, 241, 234);
-  border-radius: 5px;
+  border-radius: 10px;
   color: lightskyblue;
+  height: 25px;
 }
 
 .project-container {
@@ -93,6 +104,6 @@
   color: black;
 }
 .footer-container .socialmedia {
-  color: black;
+  color: white;
   margin-right: 30px;
 }/*# sourceMappingURL=index.css.map */
