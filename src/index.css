@@ -4,8 +4,13 @@
   margin: 0;
   padding: 0;
   font-family: "Lato", sans-serif;
-  background-color: rgb(37, 36, 36);
+  background-color: rgb(34, 34, 34);
   color: white;
+}
+
+header {
+  font-size: 4rem;
+  padding: 1rem 0;
 }
 
 .centerText {
@@ -18,6 +23,7 @@
 
 .nav-container {
   padding: 0.25rem 0.5rem;
+  font-size: 1.25rem;
 }
 .nav-container .links {
   text-decoration: none;
@@ -25,9 +31,11 @@
 }
 .nav-container .links:hover {
   font-style: italic;
+  color: rgb(212, 212, 212);
 }
 .nav-container .links:active {
   font-weight: bold;
+  font-size: 1.3rem;
 }
 
 .about-container {
@@ -69,6 +77,10 @@
   margin: 0.5rem;
   padding: 1rem 2rem;
 }
+.gridbox p {
+  text-align: center;
+  width: 60%;
+}
 .gridbox .skills {
   font-size: 0.75rem;
   margin-top: -1rem;
@@ -93,14 +105,55 @@
 
 .project-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
 }
 
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-container header {
+  font-weight: bold;
+}
+.contact-container label {
+  font-weight: bold;
+  display: block;
+  align-items: center;
+  padding: 0.5rem 0.25rem;
+}
+.contact-container input {
+  border-color: rgb(34, 34, 34);
+  background-color: rgb(67, 66, 66);
+  width: 300px;
+}
 .contact-container textarea {
+  width: 300px;
+  border-color: rgb(34, 34, 34);
   resize: none;
+  background-color: rgb(67, 66, 66);
+}
+.contact-container .submit {
+  margin: 0.25rem;
+  padding: 0.25rem;
+  border-radius: 5px;
+  border-color: rgb(34, 34, 34);
+  background-color: rgb(67, 66, 66);
+}
+.contact-container .submit:hover {
+  transform: translateY(1px);
+  box-shadow: 1px 1px 10xp black;
+}
+.contact-container .submit:active {
+  transform: translateX(2px);
+  font-weight: bold;
+}
+
+.end {
+  padding-top: 2.5rem;
 }
 
 .footer-container {
+  padding: 3rem 0;
   color: black;
 }
 .footer-container .socialmedia {

@@ -2,10 +2,10 @@ import React from 'react'
 
 export default function Contact() {
   return (
-    <div className="contact-container">  
-      <form>
-        <fieldset> Contact 
-          <header className="centerText"> Contact Me </header>
+    <>
+    <div class="contact-container">  
+      <form class="w3-animate-right">
+          <header class="centerText"> Contact Me </header>
             <label for="first-name">Full Name:</label>
                 <input type="text" 
                     id="full-name"
@@ -27,9 +27,10 @@ export default function Contact() {
                       required>
             </textarea>
             <br></br>
-            <button className="centerText submit" type="submit">Submit</button>
-            </fieldset>
+            <button class="centerText submit" type="submit">Submit</button>
           </form>
         </div>
+          <p class="centerText end"> You can also contact me through GitHub and email! </p>
+      </>
   )
 }

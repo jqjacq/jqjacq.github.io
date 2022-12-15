@@ -3,12 +3,23 @@ import React from 'react'
 export default function Projects() {
   return (
     <>
-    <header className="centerText"> My Projects </header>
+    <header className="centerText w3-animate-left"> My Portfolio </header>
     <div className="project-container">
-        
-            <p>1</p>
-            <p>2</p>
-            <p>3</p>
+      <div>
+        <p> 1 </p>
+          <img alt=""></img>
+          <p> Description</p>
+      </div>
+      <div>
+        <p> 2 </p>
+        <img alt=""></img>
+        <p> Description </p>
+      </div>
+      <div>
+        <p> 3 </p>
+        <img alt=""></img>
+        <p> Description </p>
+      </div>
     </div>
     </>
   )

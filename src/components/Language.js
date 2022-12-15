@@ -3,7 +3,7 @@ import React from 'react'
 export default function Language() {
   return (
     <div className="gridbox">
-      <div className="skills-container">
+      <div className="skills-container w3-animate-left">
       <header className="centerText">Skills</header>
         <p>
           <span className="skills">JavaScript </span>
@@ -32,7 +32,7 @@ export default function Language() {
           <progress max="100" value="80"></progress>
         </p>
       </div>
-      <div className="framework-container">
+      <div className="framework-container w3-animate-right">
       <header className="centerText">Frameworks</header>
           <p>
               <span className="skills">React</span>

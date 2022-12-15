@@ -3,7 +3,7 @@ const projects = [{
         name: "JQ's Coffee and Tea",
         projecttype: "Ecommerce",
         language: "React",
-        description: "This is a ecommerce website that consists of Bootstrap," 
+        description: "   " 
     }, {
         id: 2,
         name: "",
