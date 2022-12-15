@@ -5,20 +5,21 @@ export default function Projects() {
     <>
     <header className="centerText w3-animate-left bold"> My Projects </header>
     <div className="project-container">
-      <div>
-        <p> Ecommerce Website: JQ's Tea and Coffee </p>
-          <img alt="JQ's Tea & Coffee Ecommerce"></img>
-          <p> Description</p>
+      <div class="project-grid">
+          <img class="project-images" src="../img/project1.png" alt="JQ's Tea & Coffee Ecommerce"></img>
+          <p class="project-description"> Description</p>
       </div>
-      <div>
-        <p> Game Website: Bear to Barely </p>
+      <div class="project-grid">
         <img alt="Bear To Barely"></img>
-        <p> Description </p>
+        <p> Game Website: Bear to Barely </p>
+        <p class="project-description"> 
+            Description 
+        </p>
       </div>
-      <div>
-        <p> To Do List </p>
+      <div class="project-grid">
         <img alt="To Do List"></img>
-        <p> Description </p>
+        <p> To Do List </p>
+        <p class="project-description"> Description </p>
       </div>
     </div>
     </>

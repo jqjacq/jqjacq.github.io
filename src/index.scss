@@ -1,4 +1,4 @@
-$contactwidth: 300px;
+$contactwidth: 350px;
 $contactinputbgcolor: rgb(67, 66, 66);
 $contentfont: 0.75rem;
 $bgcolor: rgb(34, 34, 34);
@@ -69,6 +69,7 @@ header {
             width: 60%;
         }
         .skills {
+            position: absolute;
             font-size: 0.75rem;
             margin-top: -1rem;
             margin-left: -0.6rem;
@@ -76,6 +77,7 @@ header {
         }
         progress {
             position: absolute;
+            margin-left: 1rem;
             background-color: rgb(220, 241, 234);
             border-radius: 10px;
             color: lightskyblue;
@@ -85,7 +87,22 @@ header {
 .project-container { //PORTFOLIO PAGE
     display: grid;
     padding: 2rem 5rem;
+    .project-grid {
+        padding-top: 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .project-images {
+        width: 350px;
+        height: 200px;
+        border-radius: 10px;
+    }
+    .project-description {
+        margin-left: 2rem;
+    }
 }
+
 .contact-container { //CONTACT PAGE
     display: flex;
     justify-content: center;
@@ -96,8 +113,8 @@ header {
         align-items: center;
         padding: 0.5rem 0.25rem;
     }
-    input textarea .submit{
-        border-color:$contactbordercolor;
+    input, textarea, .submit{
+        border-color:$bgcolor;
         background-color: $contactinputbgcolor;
         width: $contactwidth;
     }
@@ -114,13 +131,13 @@ header {
     padding-top: 0.5rem;
 }
 .footer-container { //FOOTER
-    padding: 1rem 0;
+    padding: 1rem 1rem;
     color: black;
         .socialmedia {
             color: $fontcolor;
         }
 }
-.socialmedia, .submit, .link { //HOVER & ACTIVE
+.socialmedia, .submit, .links { //HOVER & ACTIVE
     &:hover {
         font-style: italic;
         transform: translateY(1px);
@@ -131,6 +148,5 @@ header {
         transform: translateX(2px);
         font-weight: bold;
         color:rgb(192, 192, 192, 0.5);
-        font-size: 1.3rem;
     }
 }

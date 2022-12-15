@@ -18,6 +18,10 @@ header {
   text-align: right;
 }
 
+.rightMargin {
+  margin-right: 2rem;
+}
+
 .bold {
   font-weight: bold;
 }
@@ -28,15 +32,6 @@ header {
 }
 .nav-container .links {
   text-decoration: none;
-  margin-right: 2rem;
-}
-.nav-container .links:hover {
-  font-style: italic;
-  color: rgb(212, 212, 212);
-}
-.nav-container .links:active {
-  font-weight: bold;
-  font-size: 1.3rem;
 }
 
 .about-container {
@@ -73,25 +68,19 @@ header {
   margin: 0.5rem;
   padding: 1rem 2rem;
 }
-.gridbox p {
+.gridbox .skillbar {
   text-align: center;
   width: 60%;
 }
 .gridbox .skills {
+  position: absolute;
   font-size: 0.75rem;
   margin-top: -1rem;
   margin-left: -0.6rem;
-  z-index: 1;
-  position: absolute;
   color: white;
-}
-.gridbox .skillicon {
-  padding: 2px;
 }
 .gridbox progress {
   position: absolute;
-  display: inline-flex;
-  align-items: middle;
   margin-left: 1rem;
   background-color: rgb(220, 241, 234);
   border-radius: 10px;
@@ -102,6 +91,20 @@ header {
 .project-container {
   display: grid;
   padding: 2rem 5rem;
+}
+.project-container .project-grid {
+  padding-top: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.project-container .project-images {
+  width: 350px;
+  height: 200px;
+  border-radius: 10px;
+}
+.project-container .project-description {
+  margin-left: 2rem;
 }
 
 .contact-container {
@@ -115,48 +118,40 @@ header {
   align-items: center;
   padding: 0.5rem 0.25rem;
 }
-.contact-container input {
+.contact-container input, .contact-container textarea, .contact-container .submit {
   border-color: rgb(34, 34, 34);
   background-color: rgb(67, 66, 66);
-  width: 300px;
+  width: 350px;
 }
 .contact-container textarea {
-  width: 300px;
-  border-color: rgb(34, 34, 34);
   resize: none;
-  background-color: rgb(67, 66, 66);
 }
 .contact-container .submit {
   margin: 0.25rem;
   padding: 0.25rem;
   border-radius: 5px;
-  border-color: rgb(34, 34, 34);
-  background-color: rgb(67, 66, 66);
-}
-.contact-container .submit:hover {
-  transform: translateY(1px);
-  box-shadow: 1px 1px 10xp black;
-}
-.contact-container .submit:active {
-  transform: translateX(2px);
-  font-weight: bold;
 }
 
 .end {
-  padding-top: 2.5rem;
+  padding-top: 0.5rem;
 }
 
 .footer-container {
-  padding: 2rem 0;
+  padding: 1rem 1rem;
   color: black;
 }
 .footer-container .socialmedia {
   color: white;
-  margin-right: 30px;
 }
-.footer-container .socialmedia:hover {
+
+.socialmedia:hover, .submit:hover, .links:hover {
+  font-style: italic;
+  transform: translateY(1px);
+  box-shadow: 1px 1px 10xp black;
   color: rgb(192, 192, 192);
 }
-.footer-container .socialmedia:active {
+.socialmedia:active, .submit:active, .links:active {
+  transform: translateX(2px);
+  font-weight: bold;
   color: rgba(192, 192, 192, 0.5);
 }/*# sourceMappingURL=index.css.map */
