@@ -3,9 +3,9 @@ import React from 'react'
 export default function Contact() {
   return (
     <>
-    <div class="contact-container">  
-      <form class="w3-animate-right">
-          <header class="centerText bold"> Contact Me </header>
+    <div className="contact-container">  
+      <form className="w3-animate-right">
+          <header className="centerText bold"> Contact Me </header>
             <label for="first-name">Full Name:</label>
                 <input type="text" 
                     id="full-name"
@@ -27,10 +27,22 @@ export default function Contact() {
                       required>
             </textarea>
             <br></br>
-            <button class="centerText submit" type="submit">Submit</button>
+            <button className="centerText submit" type="submit">Submit</button>
           </form>
         </div>
-          <p class="centerText end"> You can also contact me through GitHub and email! </p>
+          <p className="centerText end">
+            You can also contact me through GitHub and email!</p>
+          <p className="centerText">
+          <a href="https://www.github.com/jqjacq" alt="Github">
+            <i className="fa-brands fa-2x fa-github socialmedia rightMargin"></i>
+          </a>
+          {/* <a href="https://www.youtube.com/" alt="Youtube">
+            <i className="fa-brands fa-2x fa-youtube socialmedia"></i>
+          </a> */}
+          <a href="mailto:xujacque@gmail.com" alt="Email Address">
+            <i className="fa-solid fa-2x fa-envelope socialmedia"></i>
+          </a>
+          </p>
     </>
   )
 }

@@ -1,7 +1,8 @@
 * {
-  box-sizing: border-box;
-  font-family: "Lato", sans-serif;
-  background-color: rgb(34, 34, 34);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  background-color: #222222;
   color: white;
 }
 
@@ -27,51 +28,64 @@ header {
 }
 
 .nav-container {
-  padding: 0.25rem 0.5rem;
+  padding: .25rem .5rem;
   font-size: 1.25rem;
 }
+
 .nav-container .links {
   text-decoration: none;
 }
 
 .about-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
+
 .about-container .intro {
   width: 50%;
   padding: 9rem 1rem;
 }
+
 .about-container .intro2 {
   font-size: 1.75rem;
   margin-bottom: 1rem;
 }
+
 .about-container .intro3 {
   font-size: 1rem;
   margin-bottom: 1rem;
 }
+
 .about-container .flower {
   width: 50%;
 }
 
 .gridbox {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
   padding: 0 5rem;
 }
+
 .gridbox header {
   font-size: 1.25rem;
   padding-bottom: 1rem;
 }
+
 .gridbox .skills-container, .gridbox .framework-container {
   border: 3px solid gray;
   border-radius: 10px;
   margin: 0.5rem;
   padding: 1rem 2rem;
 }
+
 .gridbox .skillbar {
   text-align: center;
   width: 60%;
 }
+
 .gridbox .skills {
   position: absolute;
   font-size: 0.75rem;
@@ -79,56 +93,76 @@ header {
   margin-left: -0.6rem;
   color: white;
 }
+
 .gridbox progress {
   position: absolute;
   margin-left: 1rem;
-  background-color: rgb(220, 241, 234);
+  background-color: #dcf1ea;
   border-radius: 10px;
   color: lightskyblue;
   height: 25px;
 }
 
 .project-container {
+  display: -ms-grid;
   display: grid;
   padding: 2rem 5rem;
 }
+
 .project-container .project-grid {
   padding-top: 1rem;
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
 }
+
 .project-container .project-images {
   width: 350px;
   height: 200px;
   border-radius: 10px;
 }
+
 .project-container .project-description {
   margin-left: 2rem;
 }
 
 .contact-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .contact-container label {
   font-weight: bold;
   display: block;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 0.5rem 0.25rem;
 }
+
 .contact-container input, .contact-container textarea, .contact-container .submit {
-  border-color: rgb(34, 34, 34);
-  background-color: rgb(67, 66, 66);
+  border-color: #222222;
+  background-color: #434242;
   width: 350px;
 }
+
 .contact-container textarea {
   resize: none;
 }
+
 .contact-container .submit {
   margin: 0.25rem;
-  padding: 0.25rem;
+  padding: .25rem;
   border-radius: 5px;
 }
 
@@ -137,21 +171,31 @@ header {
 }
 
 .footer-container {
-  padding: 1rem 1rem;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  bottom: 0;
   color: black;
 }
+
 .footer-container .socialmedia {
   color: white;
 }
 
 .socialmedia:hover, .submit:hover, .links:hover {
   font-style: italic;
-  transform: translateY(1px);
-  box-shadow: 1px 1px 10xp black;
-  color: rgb(192, 192, 192);
+  -webkit-transform: translateY(1px);
+          transform: translateY(1px);
+  -webkit-box-shadow: 1px 1px 10xp black;
+          box-shadow: 1px 1px 10xp black;
+  color: silver;
 }
+
 .socialmedia:active, .submit:active, .links:active {
-  transform: translateX(2px);
+  -webkit-transform: translateX(2px);
+          transform: translateX(2px);
   font-weight: bold;
-  color: rgba(192, 192, 192, 0.5);
-}/*# sourceMappingURL=index.css.map */
+  color: silver;
+  opacity: 0.5;
+}
+/*# sourceMappingURL=index.css.map */

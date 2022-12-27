@@ -131,7 +131,11 @@ header {
     padding-top: 0.5rem;
 }
 .footer-container { //FOOTER
-    padding: 1rem 1rem;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+    // padding: 1rem 1rem;
     color: black;
         .socialmedia {
             color: $fontcolor;
@@ -147,6 +151,7 @@ header {
     &:active {
         transform: translateX(2px);
         font-weight: bold;
-        color:rgb(192, 192, 192, 0.5);
+        color:rgb(192, 192, 192);
+        opacity: 0.5;
     }
 }
