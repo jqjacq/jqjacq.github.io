@@ -31,17 +31,7 @@ export default function Contact() {
           </form>
         </div>
           <p className="centerText end">
-            You can also contact me through GitHub and email!</p>
-          <p className="centerText">
-          <a href="https://www.github.com/jqjacq" alt="Github">
-            <i className="fa-brands fa-2x fa-github socialmedia rightMargin"></i>
-          </a>
-          {/* <a href="https://www.youtube.com/" alt="Youtube">
-            <i className="fa-brands fa-2x fa-youtube socialmedia"></i>
-          </a> */}
-          <a href="mailto:xujacque@gmail.com" alt="Email Address">
-            <i className="fa-solid fa-2x fa-envelope socialmedia"></i>
-          </a>
+            You can also contact me through GitHub and email!
           </p>
     </>
   )

@@ -26,7 +26,7 @@ header {
     font-weight: bold;
 }
 .nav-container { //NAVBAR
-    padding: .25rem .5rem;
+    padding: 1rem .5rem;
     font-size: 1.25rem;
     .links {
         text-decoration: none;
@@ -135,13 +135,15 @@ header {
     text-align: center;
     width: 100%;
     bottom: 0;
-    // padding: 1rem 1rem;
-    color: black;
-        .socialmedia {
-            color: $fontcolor;
-        }
+}
+.socialmedia {
+    margin-left: 1rem;
+}
+.media {
+    margin-left: 3rem;
 }
 .socialmedia, .submit, .links { //HOVER & ACTIVE
+    color: $fontcolor;
     &:hover {
         font-style: italic;
         transform: translateY(1px);

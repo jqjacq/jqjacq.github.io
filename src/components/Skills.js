@@ -3,6 +3,7 @@ import React from 'react'
 export default function Skills() {
   return (
     <>
+    <header className="centerText w3-animate-left bold"> Languages </header>
       <div className="gridbox">
         <div className="skills-container w3-animate-left">
       <header className="centerText bold w3-animate-left">Skills</header>
