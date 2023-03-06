@@ -2,14 +2,24 @@ import React from 'react'
 
 export default function About() {
   return (
+    <>
     <div className="about-container">
         <img className="flower w3-animate-left" src="../img/aflower.png" alt="Rainbow Flower" />
         <div className="intro w3-animate-opacity">
-            <header className="intro1 w3-animate-right"> Hello, 👋</header>
-            <br></br>
-            <h2 className="intro2 w3-animate-left"> I'm Jacqueline. 😊 I go by JQ. </h2>
-            <h3 className="intro3 w3-animate-right"> I'm a self-taught front end developer from NYC. 🗽 </h3>
+            <h1 className=" w3-animate-right"> Hello, 👋</h1>
+            <h4 className=" w3-animate-left"> I'm Jacqueline. 😊 I go by JQ. </h4>
+            <h6 className=" w3-animate-right"> I'm a self-taught front end developer from NYC. 🗽 </h6>
+        <br></br>
+        <p className="bold skills-container">Language/Frameworks</p>
+          <img className="icons"src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="javascript" width="50" height="50"/>
+          <img className="icons"src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" alt="html" width="50" height="50"/>
+          <img className="icons"src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" alt="css3" width="50" height="50"/>
+          <img className="icons"src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" alt="react" width="50" height="50"/>
+          <img className="icons"src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original-wordmark.svg" alt="bootstrap" width="50" height="50"/>
+          <img className="icons"src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" alt="sass" width="50" height="50"/>
+          <img className="icons"src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg" alt="materialui" width="50" height="50"/>
         </div>
     </div>
+    </>
   ) 
 }
