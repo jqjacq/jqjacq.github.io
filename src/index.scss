@@ -49,7 +49,6 @@ header {
         }
         .skills-container {
             font-size: 1.25rem;
-
         }
         .icons {
             margin-right: 1rem;
@@ -61,7 +60,7 @@ header {
         padding-top: 1rem;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     }
     .project-images {
         width: 250px;
@@ -69,7 +68,6 @@ header {
         border-radius: 10px;
     }
 }
-
 .contact-container { //CONTACT PAGE
     display: flex;
     justify-content: center;
