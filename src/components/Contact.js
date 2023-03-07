@@ -3,9 +3,9 @@ import React from 'react'
 export default function Contact() {
   return (
     <>
-    <div className="contact-container">  
-      <form className="w3-animate-right">
-          <header className="centerText bold"> Contact Me </header>
+      <header className="centerText bold"> Contact Me </header>
+        <div className="contact-container containerPad">  
+          <form className="w3-animate-right">
             <label for="first-name">Full Name:</label>
                 <input type="text" 
                     id="full-name"
@@ -30,9 +30,9 @@ export default function Contact() {
             <button className="centerText submit" type="submit">Submit</button>
           </form>
         </div>
-          <p className="centerText end">
+        <p className="centerText end">
             You can also contact me through GitHub and email!
-          </p>
+        </p>
     </>
   )
 }

@@ -3,7 +3,7 @@ import React from 'react'
 export default function About() {
   return (
     <>
-    <div className="about-container">
+    <div className="about-container containerPad">
         <img className="flower w3-animate-left" src="../img/aflower.png" alt="Rainbow Flower" />
         <div className="intro w3-animate-opacity">
             <h1 className=" w3-animate-right"> Hello, 👋</h1>

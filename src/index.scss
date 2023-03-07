@@ -10,8 +10,7 @@ $fontcolor: white;
     color: $fontcolor;
 }
 header {
-    font-size: 4rem;
-    padding: 1rem 0;
+    font-size: 5vw;
 }
 .centerText {
     text-align: center;
@@ -23,10 +22,13 @@ header {
     text-align: right;
 }
 .rightMargin {
-    margin-right: 2rem;
+    margin-right: 1rem;
 }
 .bold {
     font-weight: bold;
+}
+.containerPad {
+    padding: 2rem 1rem;
 }
 .nav-container { //NAVBAR
     padding: 1rem .5rem;
@@ -39,7 +41,7 @@ header {
     display: flex;
     .intro {
         width: 50%;
-        padding: 2rem 1rem;
+        padding: 2rem 0.5rem;
         }
         .flower {
             width: 45%;
@@ -55,7 +57,6 @@ header {
 }
 .project-container { //PORTFOLIO PAGE
     display: grid;
-    padding: 2rem 5rem;
     .project-grid {
         padding-top: 1rem;
         display: grid;
@@ -63,12 +64,9 @@ header {
         grid-template-columns: 1fr 1fr 1fr;
     }
     .project-images {
-        width: 350px;
-        height: 200px;
+        width: 250px;
+        height: 150px;
         border-radius: 10px;
-    }
-    .project-description {
-        margin-left: 2rem;
     }
 }
 
@@ -105,12 +103,6 @@ header {
     width: 100%;
     bottom: 0;
 }
-.socialmedia {
-    margin-left: 1rem;
-}
-.media {
-    margin-left: 3rem;
-}
 .socialmedia, .submit, .links { //HOVER & ACTIVE
     color: $fontcolor;
     &:hover {
@@ -126,18 +118,24 @@ header {
         opacity: 0.5;
     }
 }
-
 @media only screen and (max-width: 660px) {
     .about-container {
         display: block;
         .intro {
-            width: 100%;
+            width: 90%;
             text-align: center;
             padding: 0;
         }
         .icons {
             width: 25px;
             height: 25px;
+        }
+        .flower {
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            width: 45%;
+            height: 45%;
         }
     }
     .nav-container {
@@ -146,20 +144,5 @@ header {
         .links {
             display: block;
         }
-    }
-    .navmedia {
-        display: none;
-    }
-    .flower {
-        margin-left: auto;
-        margin-right: auto;
-        display: block;
-        width: 45%;
-        height: 45%;
-    }
-    .media {
-        display: block;
-        text-align: center;
-        margin-left: -1rem;
     }
 }

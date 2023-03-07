@@ -6,8 +6,7 @@
 }
 
 header {
-  font-size: 4rem;
-  padding: 1rem 0;
+  font-size: 5vw;
 }
 
 .centerText {
@@ -23,11 +22,15 @@ header {
 }
 
 .rightMargin {
-  margin-right: 2rem;
+  margin-right: 1rem;
 }
 
 .bold {
   font-weight: bold;
+}
+
+.containerPad {
+  padding: 2rem 1rem;
 }
 
 .nav-container {
@@ -43,7 +46,7 @@ header {
 }
 .about-container .intro {
   width: 50%;
-  padding: 2rem 1rem;
+  padding: 2rem 0.5rem;
 }
 .about-container .flower {
   width: 45%;
@@ -58,7 +61,6 @@ header {
 
 .project-container {
   display: grid;
-  padding: 2rem 5rem;
 }
 .project-container .project-grid {
   padding-top: 1rem;
@@ -67,12 +69,9 @@ header {
   grid-template-columns: 1fr 1fr 1fr;
 }
 .project-container .project-images {
-  width: 350px;
-  height: 200px;
+  width: 250px;
+  height: 150px;
   border-radius: 10px;
-}
-.project-container .project-description {
-  margin-left: 2rem;
 }
 
 .contact-container {
@@ -111,14 +110,6 @@ header {
   bottom: 0;
 }
 
-.socialmedia {
-  margin-left: 1rem;
-}
-
-.media {
-  margin-left: 3rem;
-}
-
 .socialmedia, .submit, .links {
   color: white;
 }
@@ -140,7 +131,7 @@ header {
     display: block;
   }
   .about-container .intro {
-    width: 100%;
+    width: 90%;
     text-align: center;
     padding: 0;
   }
@@ -148,26 +139,18 @@ header {
     width: 25px;
     height: 25px;
   }
-  .nav-container {
-    display: block;
-    font-size: 1rem;
-  }
-  .nav-container .links {
-    display: block;
-  }
-  .navmedia {
-    display: none;
-  }
-  .flower {
+  .about-container .flower {
     margin-left: auto;
     margin-right: auto;
     display: block;
     width: 45%;
     height: 45%;
   }
-  .media {
+  .nav-container {
     display: block;
-    text-align: center;
-    margin-left: -1rem;
+    font-size: 1rem;
+  }
+  .nav-container .links {
+    display: block;
   }
 }/*# sourceMappingURL=index.css.map */
