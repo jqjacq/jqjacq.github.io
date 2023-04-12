@@ -58,13 +58,19 @@ header {
     display: grid;
     .project-grid {
         display: grid;
+        column-gap: 0;
         grid-template-columns: 1fr 1fr;
-    }
+
     .project-images {
         width: 250px;
         height: 150px;
         border-radius: 10px;
         margin-top: 1.5rem;
+        margin-left: 10%;
+        }
+    .project-description {
+        font-size: 0.9rem;
+    }
     }
 }
 .contact-container { //CONTACT PAGE

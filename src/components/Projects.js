@@ -13,20 +13,22 @@ export default function Projects() {
     <header className="centerText w3-animate-left bold"> My Projects </header>
     <div className="project-container containerPad">
       {projects.map(project => (
-      <div className="project-grid rightMargin" key={project.id}>
-        <img className="project-images" 
+      <div className="project-grid" key={project.id}>
+        <img className="project-images"                          
         src={project.img} 
         alt={project.name}></img>
-          <p className="project-description"> 
+          <p> 
             <h6 className="bold"> 
-            {project.projecttype}: {project.name}
+              {project.projecttype}: {project.name}
             </h6>
-            {project.description}
+            <p className="project-description">
+              {project.description}
+            </p>
           </p>
-          </div>
+      </div>
       ))}
       </div>
-      {/* <div className="project-grid rightMargin">
+      {/* <div className="project-grid rig                                              htMargin">
           <img className="project-images" src="../img/project2.jpg" alt="Habit Hamster Keep Track of Your Goals"></img>
         <p className="project-description"> 
             <h6 className="bold">Team Project: Habit Hamster</h6>

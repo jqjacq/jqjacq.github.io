@@ -4,13 +4,11 @@ const projects = [{
         projecttype: "Ecommerce website",
         img: "../img/project1.png",
         language: "React",
-        description: `This project is an Ecommerce website built primarily with React & MaterialUI. 
-        I used components, props, and mapping to connect the data. Each page has routing to link to a component. 
-        React state is being used to change the cover image, update the cart items, and store contact information.`
+        description: `This project is an Ecommerce website built primarily with React & MaterialUI. I used props, maps, and routing to connect the data to a component. React state is also used to change the cover image, update the cart items, and store contact information.`
     }, {
         id: 2,
-        name: "Dictionary Word Search",
-        projecttype: "Using Public API",
+        name: "Word Search",
+        projecttype: "Retrieving Public API",
         img: "../img/project2.png",
         language: "JavaScript",
         description: `This project is a dictionary that defines the word. 
