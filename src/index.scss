@@ -3,6 +3,8 @@ $contactinputbgcolor: rgb(67, 66, 66);
 $contentfont: 0.75rem;
 $bgcolor: rgb(34, 34, 34);
 $fontcolor: white;
+$activeOpacity: 0.5;
+$hoverOpacity: 0.75;
 * {
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
@@ -60,13 +62,18 @@ header {
         display: grid;
         column-gap: 0;
         grid-template-columns: 1fr 1fr;
-
-    .project-images {
-        width: 250px;
-        height: 150px;
-        border-radius: 10px;
-        margin-top: 1.5rem;
-        margin-left: 10%;
+        .project-images {
+            width: 250px;
+            height: 150px;
+            border-radius: 10px;
+            margin-top: 1.5rem;
+            margin-left: 10%;
+            &:hover {
+                opacity: $hoverOpacity;
+            }
+            &:active {
+                opacity: $activeOpacity;
+            }
         }
     .project-description {
         font-size: 0.9rem;
@@ -84,12 +91,14 @@ header {
         padding: 0.5rem 0.25rem;
     }
     input, textarea, .submit{
-        border-color:$bgcolor;
+        border: none;
         background-color: $contactinputbgcolor;
         width: $contactwidth;
+        border-radius: 5px;
     }
     textarea {
         resize: none;
+        border-radius: 5px;
     }
     .submit {
         margin: 0.25rem;
@@ -153,10 +162,10 @@ header {
         grid-template-columns: 1fr;
         text-align: center;
         }
-            .project-images {
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
+        .project-images {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        }
     }
-}
 }

@@ -75,6 +75,12 @@ header {
   margin-top: 1.5rem;
   margin-left: 10%;
 }
+.project-container .project-grid .project-images:hover {
+  opacity: 0.75;
+}
+.project-container .project-grid .project-images:active {
+  opacity: 0.5;
+}
 .project-container .project-grid .project-description {
   font-size: 0.9rem;
 }
@@ -91,12 +97,14 @@ header {
   padding: 0.5rem 0.25rem;
 }
 .contact-container input, .contact-container textarea, .contact-container .submit {
-  border-color: rgb(34, 34, 34);
+  border: none;
   background-color: rgb(67, 66, 66);
   width: 350px;
+  border-radius: 5px;
 }
 .contact-container textarea {
   resize: none;
+  border-radius: 5px;
 }
 .contact-container .submit {
   margin: 0.25rem;
