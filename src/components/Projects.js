@@ -1,21 +1,32 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+import projData from '../data/projects.js'
 
 export default function Projects() {
+  const [projects, setProjects] = useState([]);
+
+  useEffect(() => {
+    setProjects(projData)
+  }, [])
+
   return (
     <>
     <header className="centerText w3-animate-left bold"> My Projects </header>
     <div className="project-container containerPad">
-      <div className="project-grid rightMargin">
-        <img className="project-images" src="../img/project1.png" alt="JQ's Tea & Coffee Ecommerce"></img>
+      {projects.map(project => (
+      <div className="project-grid rightMargin" key={project.id}>
+        <img className="project-images" 
+        src={project.img} 
+        alt={project.name}></img>
           <p className="project-description"> 
-            <h6 className="bold"> Ecommerce website: JQ's Coffee & Tea </h6>
-            <span> This project is an Ecommerce website built primarily with React & MaterialUI. 
-              I used components, props, and mapping to connect the data. Each page has routing to link to a component. 
-              React state is being used to change the cover image, update the cart items, and store contact information. 
-            </span>
+            <h6 className="bold"> 
+            {project.projecttype}: {project.name}
+            </h6>
+            {project.description}
           </p>
+          </div>
+      ))}
       </div>
-      <div className="project-grid rightMargin">
+      {/* <div className="project-grid rightMargin">
           <img className="project-images" src="../img/project2.jpg" alt="Habit Hamster Keep Track of Your Goals"></img>
         <p className="project-description"> 
             <h6 className="bold">Team Project: Habit Hamster</h6>
@@ -32,8 +43,7 @@ export default function Projects() {
           <h6 className="bold"> To Do List </h6>
           <span>Description here.</span>
         </p>
-      </div>
-    </div>
+      </div> */}
     </>
   )
 }
