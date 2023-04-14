@@ -70,6 +70,7 @@ header {
             margin-left: 10%;
             &:hover {
                 opacity: $hoverOpacity;
+                cursor: pointer;
             }
             &:active {
                 opacity: $activeOpacity;

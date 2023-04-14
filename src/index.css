@@ -77,6 +77,7 @@ header {
 }
 .project-container .project-grid .project-images:hover {
   opacity: 0.75;
+  cursor: pointer;
 }
 .project-container .project-grid .project-images:active {
   opacity: 0.5;
