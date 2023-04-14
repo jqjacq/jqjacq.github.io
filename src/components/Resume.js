@@ -5,7 +5,10 @@ export default function Resume() {
     <>
     <header className="centerText w3-animate-left bold"> Resume </header>
     <div className="containerPad">
-            <p className="centerText">Here is a pdf of my resume.</p>
+            <h3 className="centerText">
+              <a className="resume"
+                href="../Res.pdf" 
+                target="popup">Here</a> is a pdf of my resume.</h3>
     </div>
     </>
   )

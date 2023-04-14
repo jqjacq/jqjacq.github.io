@@ -85,6 +85,15 @@ header {
   font-size: 0.9rem;
 }
 
+.resume:hover {
+  color: white;
+  opacity: 0.75;
+}
+.resume:active {
+  font-weight: bolder;
+  transform: translateX(1px);
+}
+
 .contact-container {
   display: flex;
   justify-content: center;
