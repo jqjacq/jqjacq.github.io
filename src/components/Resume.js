@@ -7,7 +7,7 @@ export default function Resume() {
     <div className="containerPad">
             <h3 className="centerText">
               <a className="resume"
-                href="../Res.pdf" 
+                href="../Res23.pdf" 
                 target="popup">Here</a> is a pdf of my resume.</h3>
     </div>
     </>

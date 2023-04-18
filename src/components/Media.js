@@ -1,5 +1,4 @@
 import React from 'react'
-
 export default function Media() {
   return (
     <span className="centerText">

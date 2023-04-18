@@ -1,6 +1,6 @@
-$contactwidth: 350px;
-$contactinputbgcolor: rgb(67, 66, 66);
-$contentfont: 0.75rem;
+// $contactwidth: 350px;
+// $contactinputbgcolor: rgb(67, 66, 66);
+// $contentfont: 0.75rem;
 $bgcolor: rgb(34, 34, 34);
 $fontcolor: white;
 $activeOpacity: 0.5;
@@ -91,34 +91,22 @@ header {
         transform: translateX(1px);
     }
 }
-.contact-container { //CONTACT PAGE
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    label {
-        font-weight: bold;
-        display: block;
-        align-items: center;
-        padding: 0.5rem 0.25rem;
+ .contact-container { //CONTACT PAGE
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     a {
+         margin: 2rem 1rem;
+        text-decoration: none;
+        &:hover {
+            opacity: $hoverOpacity;
+            color: $fontcolor;
+        }
+        &:active {
+            opacity: $activeOpacity;
+            font-weight: bold;
     }
-    input, textarea, .submit{
-        border: none;
-        background-color: $contactinputbgcolor;
-        width: $contactwidth;
-        border-radius: 5px;
-    }
-    textarea {
-        resize: none;
-        border-radius: 5px;
-    }
-    .submit {
-        margin: 0.25rem;
-        padding: .25rem;
-        border-radius: 5px;
-    }
-}
-.end {
-    padding-top: 0.5rem;
+ }
 }
 .footer-container { //FOOTER
     position: fixed;

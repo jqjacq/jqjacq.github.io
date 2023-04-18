@@ -4,7 +4,6 @@ import About from './components/About'
 import Projects from './components/Projects'
 import Resume from './components/Resume'
 import Contact from './components/Contact'
-import Footer from './components/Footer'
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom"
 
 export default function App() {
@@ -25,7 +24,6 @@ export default function App() {
                   <Resume />
               </Route>
           </Switch>
-        <Footer />
     </Router>
   )
 }

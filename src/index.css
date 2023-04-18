@@ -100,30 +100,17 @@ header {
   justify-content: center;
   align-items: center;
 }
-.contact-container label {
+.contact-container a {
+  margin: 2rem 1rem;
+  text-decoration: none;
+}
+.contact-container a:hover {
+  opacity: 0.75;
+  color: white;
+}
+.contact-container a:active {
+  opacity: 0.5;
   font-weight: bold;
-  display: block;
-  align-items: center;
-  padding: 0.5rem 0.25rem;
-}
-.contact-container input, .contact-container textarea, .contact-container .submit {
-  border: none;
-  background-color: rgb(67, 66, 66);
-  width: 350px;
-  border-radius: 5px;
-}
-.contact-container textarea {
-  resize: none;
-  border-radius: 5px;
-}
-.contact-container .submit {
-  margin: 0.25rem;
-  padding: 0.25rem;
-  border-radius: 5px;
-}
-
-.end {
-  padding-top: 0.5rem;
 }
 
 .footer-container {

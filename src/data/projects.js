@@ -9,7 +9,7 @@ const projects = [{
         id: 2,
         name: "Word Search",
         projecttype: "Retrieving Public API",
-        img: "../img/project2.png",
+        img: "../img/project22.png",
         language: "JavaScript",
         description: `This project is a dictionary that defines the word. 
         I used Vanilla JavaScript to retrieve data from a public API. 
