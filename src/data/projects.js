@@ -16,9 +16,16 @@ const projects = [{
         I retrieved the data using mapping, forEach method, fetch, promise, and async-await.`
     }, {
         id: 3,
-        name: "Habit Hamster",
-        projecttype: "Team Project",
+        name: "Random Joke Generator",
+        projecttype: "Retrieving Public API ",
         img: `${process.env.PUBLIC_URL}/img/project3.png`,
+        language: "React",
+        description: `This project generates a random joke with questions and answers through a public API using Vanilla JavaScript. Data is retrieved using class OOP, async-await, event listener, and DOM manipulation. Need a joke to brighten up your day? Check this out! `
+    }, {
+        id: 4,
+        name: "Habit Hamster",
+        projecttype: "Ongoing Team Project",
+        img: `${process.env.PUBLIC_URL}/img/project4.png`,
         language: "React",
         description: `This is a collaborative project designed to help users build better habits. 
         I am working on the front end. 
