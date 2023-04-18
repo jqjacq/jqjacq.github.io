@@ -65,24 +65,27 @@ header {
         display: grid;
         column-gap: 0;
         grid-template-columns: 1fr 1fr;
+        &:hover {
+            opacity: $hoverOpacity;
+            cursor: pointer;
+        }
+        &:active {
+            opacity: $activeOpacity;
+        }
         .project-images {
             width: 250px;
             height: 150px;
             border-radius: 10px;
             margin-top: 1.5rem;
             margin-left: 10%;
-            &:hover {
-                opacity: $hoverOpacity;
-                cursor: pointer;
-            }
-            &:active {
-                opacity: $activeOpacity;
-            }
         }
     .project-description {
         font-size: 0.9rem;
         }
     }
+}
+.pendingproject {
+    pointer-events: none;
 }
 .resume {
     &:hover {

@@ -13,7 +13,7 @@ export default function Projects() {
     <header className="centerText w3-animate-left bold"> My Projects </header>
     <div className="project-container containerPad">
       {projects.map(project => (
-        <div className="project-grid" key={project.id}>
+        <div className={`${project.className} project-grid`} key={project.id}>
         <img className="project-images"                          
         src={project.img} 
         alt={project.name}></img>
@@ -22,7 +22,7 @@ export default function Projects() {
             {project.id}. {project.projecttype}: {project.name}
             </h6>
             <hr></hr>
-            <p className="project-description">
+            <p className="project-description" >
               {project.description}
             </p>
           </p>

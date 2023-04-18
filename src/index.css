@@ -72,6 +72,13 @@ header {
        column-gap: 0;
   grid-template-columns: 1fr 1fr;
 }
+.project-container .project-grid:hover {
+  opacity: 0.75;
+  cursor: pointer;
+}
+.project-container .project-grid:active {
+  opacity: 0.5;
+}
 .project-container .project-grid .project-images {
   width: 250px;
   height: 150px;
@@ -79,15 +86,12 @@ header {
   margin-top: 1.5rem;
   margin-left: 10%;
 }
-.project-container .project-grid .project-images:hover {
-  opacity: 0.75;
-  cursor: pointer;
-}
-.project-container .project-grid .project-images:active {
-  opacity: 0.5;
-}
 .project-container .project-grid .project-description {
   font-size: 0.9rem;
+}
+
+.pendingproject {
+  pointer-events: none;
 }
 
 .resume:hover {
