@@ -41,6 +41,10 @@ header {
   text-decoration: none;
 }
 
+#nav .active-link {
+  text-decoration: underline;
+}
+
 .about-container {
   display: flex;
 }

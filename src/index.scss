@@ -39,6 +39,9 @@ header {
         text-decoration: none;
     }
 }
+#nav .active-link {
+    text-decoration: underline;
+}
 .about-container { //HOME-ABOUT
     display: flex;
     .intro {

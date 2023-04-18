@@ -1,14 +1,14 @@
 import React from 'react'
-import { Link } from "react-router-dom"
+import { NavLink } from "react-router-dom"
 import Media from './Media'
 export default function Navbar() {
   return (
     <>
-    <nav className="nav-container centerText w3-animate-left">
-            <Link to="/" className="rightMargin links"> About </Link> 
-            <Link to="/projects" className="rightMargin links"> Portfolio </Link>
-            <Link to="/resume" className="rightMargin links"> Resume </Link>
-            <Link to="/contact" className="rightMargin links"> Contact </Link>
+    <nav id="nav" className="nav-container centerText w3-animate-left">
+            <NavLink exact to="/" className="rightMargin links" activeClassName="active-link"> About </NavLink> 
+            <NavLink to="/projects" className="rightMargin links" activeClassName="active-link"> Portfolio </NavLink>
+            <NavLink to="/resume" className="rightMargin links" activeClassName="active-link"> Resume </NavLink>
+            <NavLink to="/contact" className="rightMargin links" activeClassName="active-link"> Contact </NavLink>
     </nav>
     <footer className="footer-container">
       <Media />
