@@ -5,7 +5,7 @@ export default function About() {
   return (
     <>
     <div className="about-container containerPad">
-        <img className="flower w3-animate-left" src="../img/aflower.png" alt="Rainbow Flower" />
+        <img className="flower w3-animate-left" src={`${process.env.PUBLIC_URL}/img/aflower.png`} alt="Rainbow Flower" />
         <div className="intro w3-animate-opacity">
             <h1 className=" w3-animate-right"> Hello, 👋</h1>
             <h4 className=" w3-animate-left"> I'm Jacqueline. 😊 I go by JQ. </h4>
