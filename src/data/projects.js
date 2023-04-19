@@ -5,7 +5,8 @@ const projects = [{
         img: `${process.env.PUBLIC_URL}/img/project1.png`,
         language: "React",
         description: `This project is an Ecommerce website built primarily with React & MaterialUI. I used props, maps, and routing to connect the data to a component. React state is also used to change the cover image, update the cart items, and store contact information.`,
-        className: "activeproject"
+        className: "activeproject",
+        link: "Drinks_Ecommerce/"
     }, {
         id: 2,
         name: "Word Search",
@@ -15,7 +16,8 @@ const projects = [{
         description: `This project is a dictionary that defines the word. 
         I used Vanilla JavaScript to retrieve data from a public API. 
         I retrieved the data using mapping, forEach method, fetch, promise, and async-await.`,
-        className: "activeproject"
+        className: "activeproject",
+        link: "Fetch-Dictionary/"
     }, {
         id: 3,
         name: "Random Joke Generator",
@@ -23,7 +25,8 @@ const projects = [{
         img: `${process.env.PUBLIC_URL}/img/project3.png`,
         language: "React",
         description: `This project generates a random joke with questions and answers through a public API using Vanilla JavaScript. Data is retrieved using className OOP, async-await, event listener, and DOM manipulation. Need a joke to brighten up your day? Check this out! `,
-        className: "activeproject"
+        className: "activeproject",
+        link: "Fetch-Random-Joke/"
     }, {
         id: 4,
         name: "Habit Hamster",
