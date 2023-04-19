@@ -24,7 +24,7 @@ const projects = [{
         projecttype: "Retrieving Public API ",
         img: `${process.env.PUBLIC_URL}/img/project3.png`,
         language: "React",
-        description: `This project generates a random joke with questions and answers through a public API using Vanilla JavaScript. Data is retrieved using className OOP, async-await, event listener, and DOM manipulation. Need a joke to brighten up your day? Check this out! `,
+        description: `This project generates a random joke with questions and answers through a public API using Vanilla JavaScript. Data is retrieved using class constructor (OOP), async-await, event listener, and DOM manipulation. Need a joke to brighten up your day? Check this out! `,
         className: "activeproject",
         link: "Fetch-Random-Joke/"
     }, {
