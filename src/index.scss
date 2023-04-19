@@ -11,11 +11,27 @@ $hoverOpacity: 0.75;
     background-color: $bgcolor;
     color: $fontcolor;
 }
+body {
+    width: 100vw;
+}
 header {
     font-size: 5vw;
 }
+a {
+    &:hover {
+        opacity: $hoverOpacity;
+        color: $fontcolor;
+    }
+    &:active {
+        opacity: $activeOpacity;
+        font-weight: bold;
+    }
+}
 .centerText {
     text-align: center;
+}
+.bold {
+    font-weight: bold;
 }
 .hidden {
     display: none;
@@ -26,13 +42,11 @@ header {
 .rightMargin {
     margin-right: 1rem;
 }
-.bold {
-    font-weight: bold;
-}
 .containerPad {
     padding: 1rem 2rem;
 }
-.nav-container { //NAVBAR
+//NAVBAR 
+.nav-container { 
     padding: 1rem .5rem;
     font-size: 1.25rem;
     .links {
@@ -42,7 +56,8 @@ header {
 #nav .active-link {
     text-decoration: underline;
 }
-.about-container { //HOME-ABOUT
+//HOME-ABOUT PAGE
+.about-container { 
     display: flex;
     .intro {
         width: 50%;
@@ -59,7 +74,8 @@ header {
             margin-right: 1rem;
         }
 }
-.project-container { //PORTFOLIO PAGE
+//PORTFOLIO PAGE
+.project-container {
     display: grid;
     .project-grid {
         display: grid;
@@ -76,17 +92,23 @@ header {
             width: 250px;
             height: 150px;
             border-radius: 10px;
-            margin-top: 1.5rem;
-            margin-left: 10%;
+            margin-left: auto;
+            margin-right: 10%;
+            margin-top: 1rem;
         }
     .project-description {
         font-size: 0.9rem;
         }
     }
+    a {
+        text-decoration: none;
+    }
 }
 .pendingproject {
     pointer-events: none;
+    cursor: not-allowed;
 }
+//RESUME PAGE
 .resume {
     &:hover {
         color: white;
@@ -97,24 +119,18 @@ header {
         transform: translateX(1px);
     }
 }
- .contact-container { //CONTACT PAGE
+//CONTACT PAGE
+.contact-container { 
      display: flex;
      justify-content: center;
      align-items: center;
      a {
-         margin: 2rem 1rem;
+        margin: 2rem 1rem;
         text-decoration: none;
-        &:hover {
-            opacity: $hoverOpacity;
-            color: $fontcolor;
-        }
-        &:active {
-            opacity: $activeOpacity;
-            font-weight: bold;
-    }
- }
+     }
 }
-.footer-container { //FOOTER
+//FOOTER
+.footer-container { 
     position: fixed;
     text-align: center;
     width: 100%;
@@ -169,7 +185,6 @@ header {
         text-align: center;
         }
         .project-images {
-        display: block;
         margin-left: auto;
         margin-right: auto;
         }
