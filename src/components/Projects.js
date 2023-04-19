@@ -13,7 +13,7 @@ export default function Projects() {
     <header className="centerText w3-animate-left bold"> My Projects </header>
     <div className="project-container containerPad">
       {projects.map(project => (
-        <a href={`https://jqjacq.github.io/${project.link}`} target="_new">
+        <a target="_blank "href={`https://jqjacq.github.io/${project.link}`}>
         <div className={`${project.className} project-grid`} key={project.id}>
         <img className="project-images"                          
         src={project.img} 
