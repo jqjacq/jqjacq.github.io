@@ -27,18 +27,19 @@ const projects = [{
         description: `This project generates a random joke with questions and answers through a public API using Vanilla JavaScript. Data is retrieved using class constructor (OOP), async-await, event listener, and DOM manipulation. Need a joke to brighten up your day? Check this out! `,
         className: "activeproject",
         link: "Fetch-Random-Joke/"
-    }, {
-        id: 4,
-        name: "Habit Hamster",
-        projecttype: "Ongoing Team Project",
-        img: `${process.env.PUBLIC_URL}/img/project4.png`,
-        language: "React",
-        description: `This is a collaborative project designed to help users build better habits. 
-        I am working on the front end. 
-        My partner is responsible for handling the back end. 
-        We strive to make this project compatible with multiple platforms: websites, mobile, and smartwatches.`,
-        className: "pendingproject"
     }
+    // , {
+    //     id: 4,
+    //     name: "Habit Hamster",
+    //     projecttype: "Ongoing Team Project",
+    //     img: `${process.env.PUBLIC_URL}/img/project4.png`,
+    //     language: "React",
+    //     description: `This is a collaborative project designed to help users build better habits. 
+    //     I am working on the front end. 
+    //     My partner is responsible for handling the back end. 
+    //     We strive to make this project compatible with multiple platforms: websites, mobile, and smartwatches.`,
+    //     className: "pendingproject"
+    // }
 ]
 
 export default projects
