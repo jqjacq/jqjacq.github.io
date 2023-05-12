@@ -14,7 +14,7 @@ export default function About() {
             and my <Link to="/resume" className="links">resume</Link>!
             </h6>
         <br></br>
-        <p className="bold skills-container">Language/Frameworks</p>
+        <p className="bold skills-container">Skills</p>
           <img className="icons"src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="javascript" width="50" height="50"/>
           <img className="icons"src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" alt="html" width="50" height="50"/>
           <img className="icons"src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" alt="css3" width="50" height="50"/>
@@ -22,6 +22,8 @@ export default function About() {
           <img className="icons"src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original-wordmark.svg" alt="bootstrap" width="50" height="50"/>
           <img className="icons"src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" alt="sass" width="50" height="50"/>
           <img className="icons"src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg" alt="materialui" width="50" height="50"/>
+          <img className="icons"src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="python" width="50" height="50"/>
+          <img className="icons"src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original-wordmark.svg" alt="jupyter" width="50" height="50"/>
         </div>
     </div>
     </>
