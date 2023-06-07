@@ -14,15 +14,13 @@ export default function Projects() {
     <div className="project-container containerPad">
       {projects.map(project => (
         <div className="project-grid" key={project.id}>
-          <img className="project-images"                          
-          src={project.img} 
-          alt={project.name}></img>
-          <p> 
+            <img className="project-images"                          
+              src={project.img} 
+              alt={project.name}></img>
+          <p class="project-details"> 
             <hr></hr>
             <h4 className="bold centerText uppercase"> 
-            <a target="_blank " className={`${project.className}`} href={`https://jqjacq.github.io/${project.link}`}>
-             {project.projecttype}: <h5>{project.name}</h5>
-             </a>
+              {project.projecttype}: <h5>{project.name}</h5>
             </h4>
             <hr></hr>
             <h6 className="project-description" >
@@ -32,9 +30,14 @@ export default function Projects() {
                 <span class="language rightMargin"> {project.language} </span>
                 <span class="framework">{project.framework}</span>
               </p>
-              <p class="codelink centerText">
+              <p class="codelink bold centerText">
                 <a target="_blank " href={`https://github.com/jqjacq/${project.link}`}> 
                 Code <i class="fa fa-github"></i>
+                </a>
+                <span class="rightMargin"></span>
+                <a target=
+                "_blank " className={`${project.className}`} href={`https://jqjacq.github.io/${project.link}`}>
+                  Website <i class="fa-solid fa-right-to-bracket"></i>
                 </a>
               </p>
           </p>

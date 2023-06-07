@@ -1,6 +1,3 @@
-// $contactwidth: 350px;
-// $contactinputbgcolor: rgb(67, 66, 66);
-// $contentfont: 0.75rem;
 $bgcolor: rgb(34, 34, 34);
 $fontcolor: white;
 $activeOpacity: 0.5;
@@ -23,13 +20,17 @@ hr {
     width: 45%;
 }
 a {
+    text-decoration: none;
     &:hover {
         opacity: $hoverOpacity;
         color: $fontcolor;
+        transform: translateY(1px);
+        box-shadow: 1px 1px 10xp black;
     }
     &:active {
         opacity: $activeOpacity;
         font-weight: bold;
+        transform: translateX(2px);
     }
 }
 .centerText {
@@ -60,9 +61,6 @@ a {
 .nav-container { 
     padding: 1rem .5rem;
     font-size: 1.25rem;
-    .links {
-        text-decoration: none;
-    }
 }
 #nav .active-link {
     text-decoration: underline;
@@ -77,71 +75,41 @@ a {
         .flower {
             width: 45%;
             height: 45%;
-            //Flower Move animation
             animation-name: flowerMove;
             animation-duration: 3s;
             animation-iteration-count: infinite;
             animation-direction: alternate;
             @keyframes flowerMove {
-                //Rotate left and right 10 degrees;
                 0% { transform: rotate(0deg); }
                 100% { transform: rotate(5deg); }
             }
         }
-        .skills-container {
-            font-size: 1.25rem;
-        }
-        .icons {
-            margin-right: 1rem;
-        }
 }
 //PORTFOLIO PAGE
 .project-container {
-    display: grid;
+    width: 75%;
+    margin: auto;
     .project-grid {
         display: grid;
-        column-gap: 0;
+        column-gap: 10px;
         grid-template-columns: 1fr 1fr;
-        &:hover {
-            opacity: $hoverOpacity;
-        }
-        &:active {
-            opacity: $activeOpacity;
-        }
         .project-images {
             width: 250px;
             height: 175px;
             // width: 300px;
             // height: 350px;
             border-radius: 10px;
-            margin-left: auto;
-            margin-right: 10%;
-            margin-top: 2rem;
-        }
-        h4 {
-            padding-top: 0.5rem;
+            margin: auto;
         }
     .project-description {
         font-size: 1.2rem;
         line-height: 1.75rem;
-        padding: 0 0.5rem;
+        text-align: center;
+        padding: 1rem;
         }
-    }
-    a {
-        text-decoration: none;
     }
 }
 //RESUME PAGE
-.resume {
-    &:hover {
-        color: white;
-        opacity: 0.75;
-    }
-    &:active {
-        font-weight: bolder;
-        transform: translateX(1px);
-    }
-}
 .resphoto {
     padding: 1rem;
     display: block;
@@ -154,7 +122,6 @@ a {
      align-items: center;
      a {
         margin: 2rem 1rem;
-        text-decoration: none;
      }
 }
 //FOOTER
@@ -164,22 +131,18 @@ a {
     width: 100%;
     bottom: 0;
 }
-.socialmedia, .submit, .links { //HOVER & ACTIVE
-    color: $fontcolor;
-    &:hover {
-        font-style: italic;
-        transform: translateY(1px);
-        box-shadow: 1px 1px 10xp black;
-        color:rgb(192, 192, 192);
-    }
-    &:active {
-        transform: translateX(2px);
-        font-weight: bold;
-        color:rgb(192, 192, 192);
-        opacity: 0.5;
+@media only screen and (max-width: 900px) {
+    .project-container {
+        .project-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+        }
+        .project-images {
+            margin-left: auto;
+            margin-right: auto;
+        }
     }
 }
-
 @media only screen and (max-width: 660px) {
     .about-container {
         display: block;
@@ -208,13 +171,8 @@ a {
         }
     }
     .project-container {
-        .project-grid {
-        grid-template-columns: 1fr;
-        text-align: center;
-        }
-        .project-images {
-        margin-left: auto;
-        margin-right: auto;
+        .project-description {
+            display: none;
         }
     }
 }

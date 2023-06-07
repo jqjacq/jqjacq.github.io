@@ -6,7 +6,7 @@ export default function Resume() {
     <header className="centerText w3-animate-left bold"> Resume </header>
     <div className="containerPad">
       <h3 className="centerText">
-        <a className="resume"
+        <a className="resume bold"
                 href="../Res23.pdf" 
                 target="popup">
                 Click here </a>

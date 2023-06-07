@@ -9,12 +9,12 @@ export default function About() {
         <div className="intro w3-animate-opacity">
             <h1 className=" w3-animate-right"> Hello, 👋</h1>
             <h2 className=" w3-animate-left"> I'm Jacqueline. 😊 I go by JQ. </h2>
-            <h6 className=" w3-animate-right"> I'm a self-taught front end developer from NYC. 🗽</h6>
-            <h6>Check out my <Link to="/projects" className="links"> projects </Link>
+            <h5 className=" w3-animate-right"> I'm a self-taught front end developer from NYC. 🗽</h5>
+            <h5>Check out my <Link to="/projects" className="links"> projects </Link>
             and my <Link to="/resume" className="links">resume</Link>!
-            </h6>
+            </h5>
         <br></br>
-        <p className="bold skills-container">Skills</p>
+        <h3 className="bold skills-container">Skills</h3>
           <div className="skills">
           <img className="icons"src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="javascript" width="45" height="45"/>
           <img className="icons"src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" alt="html" width="45" height="45"/>

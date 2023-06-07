@@ -5,7 +5,7 @@ const projects = [{
         img: `${process.env.PUBLIC_URL}/img/project1.png`,
         language: "React",
         framework: "MaterialUI, SASS, Bootstrap", 
-        description: `A ecommerce website built primarily with React & MaterialUI. I used props, maps, and routing to connect the data to a component. React state is also used to change the cover image, update the cart items, and store contact information.`,
+        description: `E-commerce site built with React & MaterialUI using props, maps, routing, and state to connect data and update the UI.`,
         className: "activeproject",
         link: "Drinks_Ecommerce"
     }, {
@@ -14,9 +14,7 @@ const projects = [{
         projecttype: "Retrieving Public API",
         img: `${process.env.PUBLIC_URL}/img/project22.png`,
         language: "JavaScript",
-        description: `A dictionary that defines the word. 
-        I used Vanilla JavaScript to retrieve data from a public API. 
-        I retrieved the data using mapping, forEach method, fetch, promise, and async-await.`,
+        description: `Dictionary built with Vanilla JavaScript using a public API and data retrieval methods such as mapping, forEach, fetch, promise, and async-await.`,
         className: "activeproject",
         link: "Fetch-Dictionary"
     }, {
@@ -25,7 +23,7 @@ const projects = [{
         projecttype: "Retrieving Public API ",
         img: `${process.env.PUBLIC_URL}/img/project3.png`,
         language: "JavaScript",
-        description: `A random joke generator with questions and answers through a public API using Vanilla JavaScript. Data is retrieved using class constructor (OOP), async-await, event listener, and DOM manipulation. Need a joke to brighten up your day? Check this out! `,
+        description: `A random joke generator built with Vanilla JavaScript using a public API and data retrieval methods such as class constructor (OOP), async-await, event listener, and DOM manipulation.`,
         className: "activeproject",
         link: "Fetch-Random-Joke/"
     }
