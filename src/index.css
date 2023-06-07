@@ -13,6 +13,12 @@ header {
   font-size: 5vw;
 }
 
+hr {
+  border: 1px solid white;
+  margin: 1rem auto;
+  width: 45%;
+}
+
 a:hover {
   opacity: 0.75;
   color: white;
@@ -43,7 +49,15 @@ a:active {
 }
 
 .containerPad {
-  padding: 1rem 2rem;
+  padding: 0 5rem;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.codelink {
+  font-size: 1.25rem;
 }
 
 .nav-container {
@@ -68,6 +82,18 @@ a:active {
 .about-container .flower {
   width: 45%;
   height: 45%;
+  animation-name: flowerMove;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+@keyframes flowerMove {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(5deg);
+  }
 }
 .about-container .skills-container {
   font-size: 1.25rem;
@@ -87,29 +113,28 @@ a:active {
 }
 .project-container .project-grid:hover {
   opacity: 0.75;
-  cursor: pointer;
 }
 .project-container .project-grid:active {
   opacity: 0.5;
 }
 .project-container .project-grid .project-images {
   width: 250px;
-  height: 150px;
+  height: 175px;
   border-radius: 10px;
   margin-left: auto;
   margin-right: 10%;
-  margin-top: 1rem;
+  margin-top: 2rem;
+}
+.project-container .project-grid h4 {
+  padding-top: 0.5rem;
 }
 .project-container .project-grid .project-description {
-  font-size: 0.9rem;
+  font-size: 1.2rem;
+  line-height: 1.75rem;
+  padding: 0 0.5rem;
 }
 .project-container a {
   text-decoration: none;
-}
-
-.pendingproject {
-  pointer-events: none;
-  cursor: not-allowed;
 }
 
 .resume:hover {
@@ -119,6 +144,12 @@ a:active {
 .resume:active {
   font-weight: bolder;
   transform: translateX(1px);
+}
+
+.resphoto {
+  padding: 1rem;
+  display: block;
+  margin: auto;
 }
 
 .contact-container {

@@ -13,22 +13,32 @@ export default function Projects() {
     <header className="centerText w3-animate-left bold"> My Projects </header>
     <div className="project-container containerPad">
       {projects.map(project => (
-        <a target="_blank " className={`${project.className}`} href={`https://jqjacq.github.io/${project.link}`}>
         <div className="project-grid" key={project.id}>
-        <img className="project-images"                          
-        src={project.img} 
-        alt={project.name}></img>
+          <img className="project-images"                          
+          src={project.img} 
+          alt={project.name}></img>
           <p> 
-            <h6 className="bold"> 
-            {project.id}. {project.projecttype}: {project.name}
-            </h6>
             <hr></hr>
-            <p className="project-description" >
+            <h4 className="bold centerText uppercase"> 
+            <a target="_blank " className={`${project.className}`} href={`https://jqjacq.github.io/${project.link}`}>
+             {project.projecttype}: <h5>{project.name}</h5>
+             </a>
+            </h4>
+            <hr></hr>
+            <h6 className="project-description" >
               {project.description}
-            </p>
+            </h6>
+              <p class="language bold centerText">
+                <span class="language rightMargin"> {project.language} </span>
+                <span class="framework">{project.framework}</span>
+              </p>
+              <p class="codelink centerText">
+                <a target="_blank " href={`https://github.com/jqjacq/${project.link}`}> 
+                Code <i class="fa fa-github"></i>
+                </a>
+              </p>
           </p>
       </div>
-      </a>
       ))}
       </div>
     </>
