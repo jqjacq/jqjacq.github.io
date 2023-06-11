@@ -1,7 +1,7 @@
 const projects = [{
         id: 1,
         name: "JQ's Coffee and Tea ☕",
-        projecttype: "Ecommerce website",
+        projecttype: "Ecommerce",
         img: `${process.env.PUBLIC_URL}/img/project1.png`,
         language: "React",
         framework: "MaterialUI, SASS, Bootstrap", 
@@ -11,7 +11,7 @@ const projects = [{
     }, {
         id: 2,
         name: "Word Search 📖",
-        projecttype: "Retrieving Public API",
+        projecttype: "Retrieve Public API",
         img: `${process.env.PUBLIC_URL}/img/project22.png`,
         language: "JavaScript",
         description: `Dictionary built with Vanilla JavaScript using a public API and data retrieval methods such as mapping, forEach, fetch, promise, and async-await.`,
@@ -20,7 +20,7 @@ const projects = [{
     }, {
         id: 3,
         name: "Random Joke Generator 😂",
-        projecttype: "Retrieving Public API ",
+        projecttype: "Retrieve Public API ",
         img: `${process.env.PUBLIC_URL}/img/project3.png`,
         language: "JavaScript",
         description: `A random joke generator built with Vanilla JavaScript using a public API and data retrieval methods such as class constructor (OOP), async-await, event listener, and DOM manipulation.`,

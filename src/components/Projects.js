@@ -10,37 +10,39 @@ export default function Projects() {
 
   return (
     <>
-    <header className="centerText w3-animate-left bold"> My Projects </header>
-    <div className="project-container containerPad">
+    <h1><header className="centerText w3-animate-left bold"> My Projects </header></h1>
+    <div className="project-container">
       {projects.map(project => (
         <div className="project-grid" key={project.id}>
-            <img className="project-images"                          
-              src={project.img} 
-              alt={project.name}></img>
-          <p class="project-details"> 
-            <hr></hr>
-            <h4 className="bold centerText uppercase"> 
-              {project.projecttype}: <h5>{project.name}</h5>
-            </h4>
-            <hr></hr>
-            <h6 className="project-description" >
-              {project.description}
-            </h6>
-              <p class="language bold centerText">
-                <span class="language rightMargin"> {project.language} </span>
-                <span class="framework">{project.framework}</span>
-              </p>
-              <p class="codelink bold centerText">
-                <a target="_blank " href={`https://github.com/jqjacq/${project.link}`}> 
-                Code <i class="fa fa-github"></i>
-                </a>
-                <span class="rightMargin"></span>
-                <a target=
-                "_blank " className={`${project.className}`} href={`https://jqjacq.github.io/${project.link}`}>
-                  Website <i class="fa-solid fa-right-to-bracket"></i>
-                </a>
-              </p>
+          <img className="project-images"                          
+            src={project.img} 
+            alt={project.name}>
+          </img>
+          <div className="project-details"> 
+          <hr></hr>
+          <h4 className="bold centerText uppercase project-type"> 
+            {project.projecttype}: 
+          </h4>
+          <h5 className="centerText project-name"> {project.name} </h5>
+          <hr></hr>
+          <h6 className="project-description" >
+            {project.description}
+          </h6>
+          <p className="language bold centerText">
+            <span className="language rightMargin"> {project.language} </span>
+            <span className="framework">{project.framework}</span>
           </p>
+          <div className="codelink bold centerText">
+            <a target="_blank " href={`https://github.com/jqjacq/${project.link}`}> 
+            Code <i className="fa fa-github"></i>
+            </a>
+            <span className="rightMargin"></span>
+            <a target=
+            "_blank " className={`${project.className}`} href={`https://jqjacq.github.io/${project.link}`}>
+              Website <i className="fa-solid fa-right-to-bracket"></i>
+            </a>
+          </div>
+        </div>
       </div>
       ))}
       </div>

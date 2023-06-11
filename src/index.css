@@ -100,8 +100,8 @@ a:active {
 }
 
 .project-container {
-  width: 75%;
   margin: auto;
+  width: 50%;
 }
 .project-container .project-grid {
   display: grid;
@@ -117,9 +117,8 @@ a:active {
 }
 .project-container .project-grid .project-description {
   font-size: 1.2rem;
-  line-height: 1.75rem;
+  line-height: 1.5rem;
   text-align: center;
-  padding: 1rem;
 }
 
 .resphoto {
@@ -181,7 +180,14 @@ a:active {
   .nav-container .links {
     display: block;
   }
-  .project-container .project-description {
+  .project-container .project-grid .project-images {
+    width: 175px;
+    height: 125px;
+  }
+  .project-container .project-grid .project-name {
+    font-weight: bold;
+  }
+  .project-container .project-grid .project-description, .project-container .project-grid .project-type {
     display: none;
   }
 }/*# sourceMappingURL=index.css.map */
