@@ -19,28 +19,27 @@ export default function Projects() {
             alt={project.name}>
           </img>
           <div className="project-details"> 
-          <hr></hr>
-          <h4 className="bold centerText uppercase project-type"> 
-            {project.projecttype}: 
-          </h4>
-          <h5 className="centerText project-name"> {project.name} </h5>
-          <hr></hr>
-          <h6 className="project-description" >
-            {project.description}
-          </h6>
-          <p className="language bold centerText">
-            <span className="language rightMargin"> {project.language} </span>
-            <span className="framework">{project.framework}</span>
-          </p>
-          <div className="codelink bold centerText">
-            <a target="_blank " href={`https://github.com/jqjacq/${project.link}`}> 
-            Code <i className="fa fa-github"></i>
-            </a>
-            <span className="rightMargin"></span>
-            <a target=
-            "_blank " className={`${project.className}`} href={`https://jqjacq.github.io/${project.link}`}>
-              Website <i className="fa-solid fa-right-to-bracket"></i>
-            </a>
+            <hr></hr>
+            <h4 className="bold centerText uppercase project-type"> 
+              {project.projecttype}: 
+            </h4>
+            <h5 className="centerText project-name"> {project.name} </h5>
+            <hr></hr>
+            <h6 className="project-description" >
+              {project.description}
+            </h6>
+            <div className="language bold centerText">
+              <span className="language rightMargin"> {project.language} </span>
+            <div className="codelink bold centerText">
+              <a target="_blank " href={`https://github.com/jqjacq/${project.link}`}> 
+              Code <i className="fa fa-github"></i>
+              </a>
+              <span className="rightMargin"></span>
+              <a target=
+              "_blank " className={`${project.className}`} href={`https://jqjacq.github.io/${project.link}`}>
+                Website <i className="fa-solid fa-right-to-bracket"></i>
+              </a>
+            </div>
           </div>
         </div>
       </div>

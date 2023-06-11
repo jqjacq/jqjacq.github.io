@@ -3,8 +3,7 @@ const projects = [{
         name: "JQ's Coffee and Tea ☕",
         projecttype: "Ecommerce",
         img: `${process.env.PUBLIC_URL}/img/project1.png`,
-        language: "React",
-        framework: "MaterialUI, SASS, Bootstrap", 
+        language: "React, MaterialUI, SASS, Bootstrap",
         description: `E-commerce site built with React & MaterialUI using props, maps, routing, and state to connect data and update the UI.`,
         className: "activeproject",
         link: "Drinks_Ecommerce"
