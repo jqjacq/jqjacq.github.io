@@ -20,9 +20,9 @@ export default function Projects() {
           </img>
           <div className="project-details"> 
             <hr></hr>
-            <h4 className="bold centerText uppercase project-type"> 
-              {project.projecttype}: 
-            </h4>
+            <h5 className="bold centerText uppercase project-type"> 
+              {project.projecttype} 
+            </h5>
             <h5 className="centerText project-name"> {project.name} </h5>
             <hr></hr>
             <h6 className="project-description" >
